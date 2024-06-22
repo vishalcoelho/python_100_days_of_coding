@@ -1,0 +1,9 @@
+{
+  "name": "GitHub Codespaces (python-sandbox)",
+  //   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  //   we will build the image using a dockerfile
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  }
+}
