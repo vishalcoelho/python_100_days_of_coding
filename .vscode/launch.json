@@ -5,15 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name":"Python: Current File",
-            "type":"python",
-            "request":"launch",
-            "program":"${file}",
-            "console":"integratedTerminal",
+            "name": "Pytest: All tests with Arguments",
+            "type": "debugpy",
+            "module": "pytest",
+            "request": "launch",
+            "console": "integratedTerminal",
+            // You can pass in the test filter in the command pallete, for example: -k "treasure"
+            "args": ["-s", "-k", "treasure", "${command:pickArgs}"]
+        },
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
             "autoReload": {
                 "enable": true
             },
-            "justMyCode":true,
+            "justMyCode": true,
             "env": {
                 "PYTHONPATH": "${workspaceFolder}\\funcLog",
             },

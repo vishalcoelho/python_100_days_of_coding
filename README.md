@@ -149,7 +149,7 @@ This repository contains all the coding assignments from the Udemy course, _100 
   For example,
 
   ```
-  init-hook=init-hook='import sys; sys.path.append("C:\\Users\\<username>\\repositories\\python_100_days_of_coding\\src")
+  init-hook=init-hook='import sys; sys.path.append("C:\\Users\\<username>\\repositories\\python_100_days_of_coding")
   ```
 
 # Course Notes
