@@ -11,7 +11,7 @@
             "request": "launch",
             "console": "integratedTerminal",
             // You can pass in the test filter in the command pallete, for example: -k "treasure"
-            "args": ["-s", "-k", "treasure", "${command:pickArgs}"]
+            "args": ["-s", "-k", "rock_paper_scissors", "${command:pickArgs}"]
         },
         {
             "name": "Python: Current File",

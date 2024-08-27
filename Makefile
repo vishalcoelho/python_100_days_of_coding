@@ -37,4 +37,4 @@ lint:
 
 refactor: format lint
 
-all: install lint test format
+all: install lint format
