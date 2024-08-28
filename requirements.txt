@@ -37,6 +37,7 @@ pydantic==1.10.17
 pylint==2.15.9
 pytest==8.2.2
 pytest-cov==5.0.0
+pytest_mock
 pywin32==302
 regex==2024.5.15
 requests==2.32.3
