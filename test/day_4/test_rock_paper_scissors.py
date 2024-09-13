@@ -12,10 +12,6 @@ from src.day_4.rock_paper_scissor import (
     prompt_win
 )
 
-from typing import List
-
-
-
 test_rock_paper_scissors_params = [
     # user choice, computer random choice, expected outcome
     (0, 1, prompt_lose),
