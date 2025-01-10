@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../repositories/python_100_days_of_coding"
+		}
+    ],
+    "settings": {
+        "python.languageServer": "Pylance"
+    }
+}
