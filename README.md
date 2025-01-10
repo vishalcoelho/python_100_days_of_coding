@@ -10,6 +10,7 @@
     - [Creating a Conda Environment within your Workspace](#creating-a-conda-environment-within-your-workspace)
     - [Setting up PyLint](#setting-up-pylint)
 - [Course Notes](#course-notes)
+  - [Makefiles](#makefiles)
 
 # Introduction
 
@@ -153,3 +154,30 @@ This repository contains all the coding assignments from the Udemy course, _100 
   ```
 
 # Course Notes
+## Makefiles
+There are several commands at your disposal
+> ``` make all```
+
+will install the necessary python dependencies as well as upgrade your pip installation (for the environment only).
+
+It will also run the `pylint` linter and `black` formatter on code.
+
+>```make refactor```
+
+runs just the linter and formatter on your code. Here is a sample,
+
+![make refactor](docs/images/make_refactor.png)
+
+Each day of code has a corresponding pytest test. You can run all tests
+
+>```make tests```
+
+Running pytest also gives you code coverage numbers
+
+![code coverage](docs/images/code_coverage.png)
+
+You can run individual tests. For example, I want to run day 10 -- the calculator test
+
+>```make single_test ARGS=day_10```
+
+![make single test](docs/images/single_test.png)
