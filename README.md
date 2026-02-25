@@ -8,9 +8,11 @@
   - [Creating a Virtual Environment](#creating-a-virtual-environment)
     - [Creating a venv Environment](#creating-a-venv-environment)
     - [Creating a Conda Environment within your Workspace](#creating-a-conda-environment-within-your-workspace)
-    - [Setting up PyLint](#setting-up-pylint)
+  - [Setting up PyLint](#setting-up-pylint)
+  - [PlantUML](#plantuml)
 - [Course Notes](#course-notes)
   - [Makefiles](#makefiles)
+  - [Day 11 - BlackJack](#day-11---blackjack)
 
 # Introduction
 
@@ -138,8 +140,7 @@ This repository contains all the coding assignments from the Udemy course, _100 
         ```fire==0.5.0```
   - copy the line over to requirements.txt and pin the fire module to a specific version.
 
-### Setting up PyLint
-
+## Setting up PyLint
 
 - Pylint doesn't know where the imports are located. Once the environment is active, we will have pylint create a configuration file for us
     ```pylint --generate-rcfile > .pylintrc```
@@ -152,6 +153,14 @@ This repository contains all the coding assignments from the Udemy course, _100 
   ```
   init-hook=init-hook='import sys; sys.path.append("C:\\Users\\<username>\\repositories\\python_100_days_of_coding")
   ```
+
+## PlantUML
+
+Flowcharts are written in PlantUML. You must install the Java Runtime Environment and the PlantUML extension for Visual Studio Code.
+
+Additionally, you must install `graphviz` through the MSYS2 terminal
+
+>```pacman -S graphviz```
 
 # Course Notes
 ## Makefiles
@@ -181,3 +190,11 @@ You can run individual tests. For example, I want to run day 10 -- the calculato
 >```make single_test ARGS=day_10```
 
 ![make single test](docs/images/single_test.png)
+
+## Day 11 - BlackJack
+
+```plantuml
+
+!include src\day_11\flowchart.puml
+
+```
