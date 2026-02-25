@@ -1,0 +1,40 @@
+@startuml Blackjack
+
+title Day 11 - BlackJack Flowchart
+
+start
+:deal a card to user and dealer;
+:deal another card to dealer;
+:calculate dealer card value;
+if (dealer card value == 21) then (yes)
+    :dealer wins;
+else (no)
+    while (user card value < 21) is (yes)
+        if (user wants card) then (yes)
+            :deal user card;
+            :calculate user card value;
+        else (no)
+        endif
+    endwhile (no)
+
+    while (dealer card value < 17) is (yes)
+        :deal card to dealer;
+        :calculate dealer card value;
+    endwhile (no)
+
+    :reveal dealer card value;
+    if (user card value > 21) then (yes)
+        :dealer wins;
+    elseif (dealer card value > 21) then (yes)
+        :user wins;
+    elseif (user card value == \ndealer card value) then (yes)
+        :draw;
+    elseif (user card value > \ndealer card value) then (yes)
+        :user wins;
+    else (no)
+        :dealer wins;
+    endif
+endif
+
+stop
+@enduml
