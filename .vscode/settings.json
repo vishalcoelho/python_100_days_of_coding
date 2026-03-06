@@ -3,24 +3,16 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "files.autoSave": "afterDelay",
-    "python.languageServer": "Pylance",
     "editor.rulers": [
         79
     ],
-    "python.linting.mypyArgs": [
-        "--ignore-missing-imports",
-        "--follow-imports=silent",
-        "--show-column-numbers",
-        "--strict"
+    "python-envs.pythonProjects": [
+        {
+            "path": ".",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
     ],
-    "python.linting.mypyEnabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.pylintArgs": [
-        "--max-line-length=79",
-        "--unsafe-load-any-extension=y",
-        "--ignore=.git,venv,.vscode,__pycache__"
-    ],
-    "python.formatting.provider": "black",
     "python.analysis.typeCheckingMode": "basic",
-    "python.pythonPath": "C:\\Users\\vcoelho\\Miniconda3\\envs\\python_sandbox"
+    "python.analysis.diagnosticMode": "workspace"
   }

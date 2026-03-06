@@ -4,7 +4,8 @@ SRC := $(wildcard *.py) $(wildcard src/*/*.py)
 TEST_SRC := $(wildcard test/*/test_*?.py)
 
 install:
-	pip install --upgrade pip &&\
+	python -m pip install --upgrade pip &&\
+	pip-compile requirements.in &&\
 	pip install -r requirements.txt
 
 args := $(or ${ARGS}, null)

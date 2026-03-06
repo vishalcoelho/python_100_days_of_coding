@@ -10,9 +10,10 @@
     - [Creating a Conda Environment within your Workspace](#creating-a-conda-environment-within-your-workspace)
   - [Setting up PyLint](#setting-up-pylint)
   - [PlantUML](#plantuml)
-- [Course Notes](#course-notes)
   - [Makefiles](#makefiles)
+- [Course Notes](#course-notes)
   - [Day 11 - BlackJack](#day-11---blackjack)
+  - [Day 16 -Turtle Graphics](#day-16--turtle-graphics)
 
 # Introduction
 
@@ -162,7 +163,6 @@ Additionally, you must install `graphviz` through the MSYS2 terminal
 
 >```pacman -S graphviz```
 
-# Course Notes
 ## Makefiles
 There are several commands at your disposal
 > ``` make all```
@@ -191,6 +191,10 @@ You can run individual tests. For example, I want to run day 10 -- the calculato
 
 ![make single test](docs/images/single_test.png)
 
+---
+
+# Course Notes
+
 ## Day 11 - BlackJack
 
 ```plantuml
@@ -198,3 +202,7 @@ You can run individual tests. For example, I want to run day 10 -- the calculato
 !include src\day_11\flowchart.puml
 
 ```
+
+## Day 16 -Turtle Graphics
+
+[OOP with Turtle](./src/day_16/README.md)
